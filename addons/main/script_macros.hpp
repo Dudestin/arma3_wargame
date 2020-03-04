@@ -1,1 +1,1 @@
-#define UI_BACKGROUND_GREEN [0.1, 0.4, 0.1, 0.68]
+#define VERSION_CONFIG 0.1

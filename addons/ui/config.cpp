@@ -1,12 +1,10 @@
-#include "script_component.hpp"
-
 class CfgPatches {
     class ADDON {
-        name = COMPONENT_NAME;
+        name = "Arma3-Wargame";
         units[] = {};
         weapons[] = {};
-        requiredVersion = REQUIRED_VERSION;
+        requiredVersion = 0.1;
         requiredAddons[] = {};
-        author = {};
+        authors[] = {"Dudestin"};
     }
 };
