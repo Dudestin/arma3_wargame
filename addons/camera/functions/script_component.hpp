@@ -1,0 +1,1 @@
+#include "x\awg\addons\camera\script_component.hpp"

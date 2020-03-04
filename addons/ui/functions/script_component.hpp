@@ -1,0 +1,1 @@
+#include "x\awg\addons\ui\script_component.hpp"

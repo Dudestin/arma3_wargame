@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Dudestin
  * Create Curator-like('Zeus-like') camera.
@@ -9,12 +10,12 @@
  * The created camera <OBJECT>
  *
  * Example:
- * [player] call awg_cam_fnc_createCam;
+ * [player] call awg_cam_fnc_createCamera;
  *
  * Public: No
  */
 
-awg_cam_fnc_createCam = 
+awg_cam_fnc_createCamera = 
 { 
   private ['_unit']; 
   _unit = _this select 0; 
@@ -27,6 +28,5 @@ awg_cam_fnc_createCam =
   showCinemaBorder false; 
   cameraEffectEnableHUD true; 
   awg_cam_cam camSetFov 0.8; 
-  awg_cam_cam camCommit 0; 
+  awg_cam_cam camCommit 0;  
 };
-[player] call awg_cam_fnc_createCam;
