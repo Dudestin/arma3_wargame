@@ -7,6 +7,7 @@
  * Nothing
  *
  * Access Value:
+ * awg_cam_camPosCoef <Number>
  * awg_cam_cam <Object(Camera)>
  *
  * Return Value:
@@ -22,4 +23,5 @@ awg_cam_fnc_setCameraOffset = {
 	//_groupPos = [group] call awg_cam_fnc_getGroupPosition;
 	//awg_cam_cam setPos (_groupPos + awg_cam_camPosOffset);
 	//awg_cam_cam setDir (getDir group);
+	
 };

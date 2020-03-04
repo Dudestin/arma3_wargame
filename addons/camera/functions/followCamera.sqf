@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Dudestin
- * follow group(or unit) as camera. call Each Frame to Focus.
+ * follow group(or unit) as camera. call when focused group(or unit) move.
  *
  * Arguments:
  * Nothing
