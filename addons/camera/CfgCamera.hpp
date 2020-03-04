@@ -1,0 +1,6 @@
+#define ZOOM_UP 1
+#define ZOOM_DOWN 0
+#define ZOOM_UNDER_LIMIT 0.5
+#define ZOOM_UPPER_LIMIT 5.0
+#define ZOOM_CHANGE_VALUE 0.2
+#define ZOOM_DEFAULT_VALUE 3.0

@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Dudestin
- * follow group(or unit) as camera. call when focused group(or unit) move.
+ * follow group(or unit) as camera. call when focused group(or unit) moved.
  *
  * Arguments:
  * Nothing
@@ -21,6 +21,6 @@
 
 awg_cam_fnc_focusCamera = {
 	_groupPos = [group] call awg_cam_fnc_getGroupPosition;
-	awg_cam_cam setPos _groupPos;
+	awg_cam_cam setPos (_groupPos + [] call getCameraPosOffset);
 	awg_cam_cam setDir (getDir group);
 };
