@@ -5,7 +5,7 @@
  * Call from Mouse Wheel Event handler.
  *
  * Arguments:
- * Zoom UP or DOWN <Number>
+ * ZOOM_UP or ZOOM_DOWN <Number>
  * 
  * Access Value:
  * awg_cam_cameraPosCoef <Number>
