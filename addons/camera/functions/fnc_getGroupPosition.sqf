@@ -16,5 +16,6 @@
  */
 
 private ['group'];
-_groupPos = position (leader group);
+_groupPos = position (leader group)
+
 _groupPos

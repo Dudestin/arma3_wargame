@@ -14,7 +14,7 @@
  * Nothing
  *
  * Example:
- * [ZOOM_UP] call awg_cam_fnc_setCameraPosCoef;
+ * [ZOOM_UP] call awg_cam_fnc_changeCameraPosCoef;
  *
  * Public: No
  */

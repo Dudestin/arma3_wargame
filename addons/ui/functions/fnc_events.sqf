@@ -28,11 +28,16 @@ awg_ui_events_mouseUp =
 
 awg_ui_events_keyDown =
 {
-
   params ["", "_key", "_shift", "_ctrl", "_alt"];
 };
 
 awg_ui_events_keyUp =
 {
   params ["", "_key", "_shift", "_ctrl", "_alt"];
+};
+
+awg_ui_events_wheelChanged =
+{
+  params ["", "_scroll"];
+  [_scroll] spawn awg_cam_fnc_changeCameraPosCoef;
 };

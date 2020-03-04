@@ -6,6 +6,9 @@
  * Arguments: 
  * Nothing
  * 
+ * Access Value:
+ * uiNamespace/awg_ui_display <Object(Display)>
+ *
  * Return Value: 
  * Nothing
  *
@@ -19,6 +22,13 @@ awg_ui_createDisplay =
 {
   disableSerialization;
   uiNamespace setVariable ["awg_ui_display", findDisplay 46 createDisplay "RscDisplayEmpty"];
+  (uiNamespace getVariable "awg_ui_display") ctrlAddEventHandler["onMouseZChanged", "_this call awg_ui_events_wheelChanged"];
+
+  [] call awg_cam_fnc_createCamera;
+  onEachFrame{
+    [] call awg_cam_fnc_followCamera;
+  };
+
   [] call awg_ui_createDeployGroup;
   [] call awg_ui_createGamePanelGroup;
 };
