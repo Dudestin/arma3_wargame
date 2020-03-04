@@ -18,6 +18,4 @@
  * Public: No
  */
 
-awg_cam_fnc_getCameraPosOffset ={
-	[0, 0, (1/a)*((awg_cam_cameraPosCoef^3/3)+b)]
-};
+[0, 0, (1/a)*((awg_cam_cameraPosCoef^3/3)+b)]

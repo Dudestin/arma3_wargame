@@ -19,16 +19,13 @@
  * Public: No
  */
 
-awg_cam_fnc_setCameraPosCoef = 
-{
-	params["_direction"]	
-	if (_direction == ZOOM_UP) then{
-		if (awg_cam_cameraPosCoef-ZOOM_CHANGE_VALUE >= ZOOM_UNDER_LIMIT) then{
-			awg_cam_cameraPosCoef -= ZOOM_CHANGE_VALUE;
-		}
-	} else {
-		if (awg_cam_cameraPosCoef+ZOOM_CHANGE_VALUE <= ZOOM_UPPER_LIMIT) then{	
-			awg_cam_cameraPosCoef += ZOOM_CHANGE_VALUE;
-		}
+params["_direction"]	
+if (_direction == ZOOM_UP) then{
+	if (awg_cam_cameraPosCoef-ZOOM_CHANGE_VALUE >= ZOOM_UNDER_LIMIT) then{
+		awg_cam_cameraPosCoef -= ZOOM_CHANGE_VALUE;
 	}
-};
+} else {
+	if (awg_cam_cameraPosCoef+ZOOM_CHANGE_VALUE <= ZOOM_UPPER_LIMIT) then{	
+		awg_cam_cameraPosCoef += ZOOM_CHANGE_VALUE;
+	}
+}

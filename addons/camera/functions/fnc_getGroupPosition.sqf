@@ -15,9 +15,6 @@
  * Public: No
  */
 
-awg_cam_fnc_getGroupPosition =
-{
-  private ['group'];
-  _groupPos = position (leader group);
-  _groupPos
-};
+private ['group'];
+_groupPos = position (leader group);
+_groupPos
