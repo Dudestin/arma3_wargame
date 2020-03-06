@@ -16,6 +16,6 @@
  */
 
 params ['_group'];
-_groupPos = position (leader _group)
+_groupPos = position (leader _group);
 
 _groupPos
