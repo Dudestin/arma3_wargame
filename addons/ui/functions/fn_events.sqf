@@ -1,5 +1,5 @@
 #include "script_component.hpp"
-#include "\a3\ui_f\hpp\definedikcodes.inc"
+// #include "\a3\ui_f\hpp\definedikcodes.inc"
 /* 
  * Author: Dudestin 
  * event handler for the ui component
@@ -16,6 +16,7 @@
  * Public: No 
  */
 
+/*
 awg_ui_events_mouseDown =
 {
   params = ["", "_button", "_xPos", "_yPos", "_shift", "_ctrl", "_alt"];
@@ -41,3 +42,4 @@ awg_ui_events_wheelChanged =
   params ["", "_scroll"];
   [_scroll] spawn awg_cam_fnc_changeCameraPosCoef;
 };
+*/
