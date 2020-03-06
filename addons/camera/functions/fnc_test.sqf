@@ -1,1 +1,1 @@
-hint "test dayo"
+true
