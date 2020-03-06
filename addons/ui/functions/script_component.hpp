@@ -1,1 +1,1 @@
-#include "j\awg\addons\ui\script_component.hpp"
+#include "\j\awg\addons\ui\script_component.hpp"

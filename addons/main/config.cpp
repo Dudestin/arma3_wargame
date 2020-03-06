@@ -1,25 +1,24 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class awg_ui {
-        name = "awg_ui";
+    class awg_main {
+        name = "awg_main";
         units[] = {};
         weapons[] = {};
+		author = "Dudestin"
         requiredVersion = 0.1;
         requiredAddons[] = {};
-        authors[] = {"Dudestin"};
     };
 };
 
 class CfgFunctions
 {
-	class awg_ui
+	class awg_main
 	{
 		class myCategory
 		{
-			file = "j\awg\addons\ui\functions";
-			class createDisplay{};
-            class events{};
+			file = "j\awg\addons\main\functions";
+			class test{};
 		};
 	};
 };
