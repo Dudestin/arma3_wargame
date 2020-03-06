@@ -15,7 +15,7 @@
  * Public: No
  */
 
-private ['group'];
-_groupPos = position (leader group)
+params ['_group'];
+_groupPos = position (leader _group)
 
 _groupPos

@@ -19,6 +19,8 @@
  * Public: No
  */
 
-_groupPos = [group] call awg_cam_fnc_getGroupPosition;
+params ["_group"]
+
+_groupPos = [_group] call awg_cam_fnc_getGroupPosition;
 awg_cam_cam setPos (_groupPos vectorAdd [] call getCameraPosOffset);
-awg_cam_cam setDir (getDir group);
+awg_cam_cam setDir (getDir _group);

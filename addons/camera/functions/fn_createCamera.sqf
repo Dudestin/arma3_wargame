@@ -15,7 +15,7 @@
  * Public: No
  */
 
-private ['_unit']; 
+params ['_unit']; 
 _unit = _this select 0; 
 _camPos = position player; 
 awg_cam_cam = "camcurator" camCreate _camPos; 

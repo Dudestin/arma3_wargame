@@ -1,2 +1,2 @@
-hint "hoge"
+hint "hoge";
 true;
