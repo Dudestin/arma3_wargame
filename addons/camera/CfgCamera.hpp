@@ -4,3 +4,9 @@
 #define ZOOM_UPPER_LIMIT 5.0
 #define ZOOM_CHANGE_VALUE 0.2
 #define ZOOM_DEFAULT_VALUE 3.0
+
+#define DEFAULT_CAMERA_POS_OFFSET 0.6
+
+// using awg_cam_fnc_getCameraPosOffset
+#define CAMERA_POS_OFFSET_FUNC_PARAM_A 3
+#define CAMERA_POS_OFFSET_FUNC_PRRAM_B 0.5

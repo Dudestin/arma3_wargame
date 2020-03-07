@@ -21,6 +21,8 @@
 
 params ["_group"];
 
-_groupPos = [_group] call awg_cam_fnc_getGroupPosition;
-awg_cam_cam setPos (_groupPos vectorAdd [] call awg_cam_fnc_getCameraPosOffset);
+//_groupPos = [_group] call awg_cam_fnc_getGroupPosition;
+//_posOffset = [] call awg_cam_fnc_getCameraPosOffset;
+_cameraPos = ([_group] call awg_cam_fnc_getGroupPosition) vectorAdd ([] call awg_cam_fnc_getCameraPosOffset);
+awg_cam_cam setPos _cameraPos;
 awg_cam_cam setDir (getDir _group);
