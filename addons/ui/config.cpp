@@ -23,3 +23,5 @@ class CfgFunctions
 		};
 	};
 };
+
+#include "CfgUI.hpp"

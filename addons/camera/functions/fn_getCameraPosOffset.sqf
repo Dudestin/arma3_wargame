@@ -18,4 +18,9 @@
  * Public: No
  */
 
-[0, 0, (1/a)*((awg_cam_cameraPosCoef^3/3)+b)]
+_a = 3;
+_b = 0.5;
+if (isNil awg_cam_cameraPosCoef) then{
+	awg_cam_cameraPosCoef = 0.8;
+};
+[0, 0, (1/_a)*((awg_cam_cameraPosCoef^3/3)+_b)]
