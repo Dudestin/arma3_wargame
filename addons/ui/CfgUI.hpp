@@ -12,7 +12,12 @@
 // Color
 #define UI_BACKGROUND_GREEN {0.1,0.4,0.1,0.68}
 
+// IDD & IDC
 #define AWG_COMMAND_DISPLAY_IDD 46
+#define AWG_COMMAND_DEPLOY_BUTTON 99
+#define AWG_COMMAND_HQ_BUTTON 100
+#define AWG_COMMAND_CHAT_BUTTON 101
+#define AWG_COMMAND_CHAT_BUTTON 102
 
 class RscButtonMenu;
 class RscDisplayEmpty;
@@ -70,10 +75,10 @@ class AWG_UIDisplay : RscDisplayEmpty{
 		};
 		// AirSupport Button Display current has aircraft on table
 		class AirSupportButton : RscButtonAWG_UI{
-			idc = 101;
+			idc = 102;
 			text  = "AirSupport";
-			x = SCREEN_LEFT_BORDER_X + 23*UI_BUTTON_SIZE_W);
-			y = SCREEN_BUTTOM_BORDER_Y - UI_BUTTON_SIZE_H;
+			x = SCREEN_LEFT_BORDER_X + 2*UI_BUTTON_SIZE_W;
+			y = SCREEN_BOTTOM_BORDER_Y - UI_BUTTON_SIZE_H;
 		};
 	};
 };
