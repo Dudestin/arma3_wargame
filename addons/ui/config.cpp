@@ -1,12 +1,12 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class awg_ui {
-        name = "awg_ui";
+    class ADDON {
+        name = COMPONENT_NAME;
         units[] = {};
         weapons[] = {};
-        requiredVersion = 0.1;
-        requiredAddons[] = {"a3_ui_f"};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {"cba_main", QUOTE(DOUBLES(PREFIX, "main"))};
         authors[] = {"Dudestin"};
     };
 };

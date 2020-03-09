@@ -1,12 +1,12 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-  class awg_cam {
-    name = "awg_cam";
+  class ADDON {
+    name = COMPONENT_NAME;
     units[] = {};
     weapons[] = {};
-    requiredVersion = 0.1;
-    requiredAddons[] = {};
+    requiredVersion = REQUIRED_VERSION;
+    requiredAddons[] = {"cba_main", QUOTE(DOUBLES(PREFIX, main))};
     authors[] = {"Dudestin"};
   };
 };

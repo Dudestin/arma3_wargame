@@ -1,11 +1,13 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class awg_main {
-        name = "awg_main";
+    class ADDON {
+        name = COMPONENT_NAME;
         units[] = {};
         weapons[] = {};
-		author = "Dudestin"
+		requiredVersion = REQUIRED_VERSION;
+		requiredAddons[] = {"cba_main"};
+		author = "Dudestin";
         requiredVersion = 0.1;
         requiredAddons[] = {};
     };
