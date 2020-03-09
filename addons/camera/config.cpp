@@ -26,3 +26,5 @@ class CfgFunctions
 		};
 	};
 };
+
+#include "CfgCamera.hpp"

@@ -18,7 +18,6 @@
 params ['_unit']; 
 _camPos = position _unit;
 awg_cam_cam = "camera" camCreate _camPos;
-uiNamespace setVariable ["awg_cam_cameraPosCoef", DEFAULT_CAMERA_POS_OFFSET];
 awg_cam_cam setPosASL _camPos;
 awg_cam_cam setDir (getDir _unit); 
 

@@ -13,12 +13,18 @@
  * Position <Vector>
  *
  * Example:
- * _camPosOffset = [] call awg_cam_fnc_getCameraPosOffset;
+ * _camPosOffset = ;
  *
  * Public: No
  */
+#define CAMERA_POS_OFFSET_FUNC_PARAM_A 3
+#define CAMERA_POS_OFFSET_FUNC_PRRAM_B 0.5
 
-_a = CAMERA_POS_OFFSET_FUNC_PARAM_A;
-_b = CAMERA_POS_OFFSET_FUNC_PARAM_B;
+private _temp_camPosCoef = missionNamespace getVariable "posCoef";
 
-[0,0,(1/_a)*((uiNamespace getVariable "awg_cam_cameraPosCoef")^3/3)+_b]
+if (isNil "_temp_camPosCoef") then
+{
+	missionNamespace setVariable ["posCoef", 3]; 
+};
+
+[0,0,(1/CAMERA_POS_OFFSET_FUNC_PARAM_A)*((missionNamespace getVariable "posCoef")^3/3)+CAMERA_POS_OFFSET_FUNC_PARAM_B];
