@@ -19,7 +19,7 @@ class CfgFunctions
 		{
 			file = "j\awg\addons\cam\functions";
 			class changeCameraPosCoef{};
-      class createCamera{};
+      class initCamera{};
       class followCamera{};
       class getCameraPosOffset{};
       class getGroupPosition{};

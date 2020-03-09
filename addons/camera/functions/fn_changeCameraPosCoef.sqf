@@ -18,12 +18,12 @@
  *
  * Public: No
  */
-#define ZOOM_UP 1
-#define ZOOM_DOWN 0
-#define ZOOM_UNDER_LIMIT 0.5
-#define ZOOM_UPPER_LIMIT 5.0
-#define ZOOM_CHANGE_VALUE 0.2
-#define ZOOM_DEFAULT_VALUE 3.0
+ZOOM_UP = 1;
+ZOOM_DOWN = 0;
+ZOOM_UNDER_LIMIT = 0;
+ZOOM_UPPER_LIMIT = 100.0;
+ZOOM_CHANGE_VALUE = 0.2;
+ZOOM_DEFAULT_VALUE = 3.0;
 
 params["_direction"];
 
@@ -31,7 +31,7 @@ private _temp_camPosCoef = missionNamespace getVariable "posCoef";
 
 if (isNil "_temp_camPosCoef") then
 {
-	missionNamespace setVariable ["posCoef", 3]; 
+	missionNamespace setVariable ["posCoef", 3];
 };
 
 if (_direction == ZOOM_UP) then{

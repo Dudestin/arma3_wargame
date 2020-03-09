@@ -10,12 +10,12 @@
  * The created camera <OBJECT>
  *
  * Example:
- * [player] call awg_cam_fnc_createCamera;
+ * [player] call awg_cam_fnc_initCamera;
  *
  * Public: No
  */
 
-params ['_unit']; 
+params ['_unit'];
 _camPos = position _unit;
 awg_cam_cam = "camera" camCreate _camPos;
 awg_cam_cam setPosASL _camPos;

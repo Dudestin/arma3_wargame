@@ -18,7 +18,7 @@
  * Public: No 
  */
 
-[player] call awg_cam_fnc_createCamera;
+[player] call awg_cam_fnc_initCamera;
 
 disableSerialization;
 uiNamespace setVariable ["awg_ui_display", findDisplay 46 createDisplay "AWG_UIDisplay"];

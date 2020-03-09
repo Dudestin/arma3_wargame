@@ -17,8 +17,8 @@
  *
  * Public: No
  */
-#define CAMERA_POS_OFFSET_FUNC_PARAM_A 3
-#define CAMERA_POS_OFFSET_FUNC_PRRAM_B 0.5
+CAMERA_POS_OFFSET_FUNC_PARAM_A = 3;
+CAMERA_POS_OFFSET_FUNC_PARAM_B = 1.8;
 
 private _temp_camPosCoef = missionNamespace getVariable "posCoef";
 
