@@ -40,7 +40,7 @@
  */
 
 #ifndef MAINPREFIX
-    #define MAINPREFIX x
+    #define MAINPREFIX j
 #endif
 
 #ifndef SUBPREFIX
